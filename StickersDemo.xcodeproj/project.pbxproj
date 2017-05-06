@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEACEA3C1EBE5C1400C5968F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEACEA3B1EBE5C1400C5968F /* AppDelegate.swift */; };
+		CEACEA3E1EBE5C1400C5968F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEACEA3D1EBE5C1400C5968F /* ViewController.swift */; };
+		CEACEA411EBE5C1400C5968F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEACEA3F1EBE5C1400C5968F /* Main.storyboard */; };
+		CEACEA441EBE5C1400C5968F /* StickersDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEACEA421EBE5C1400C5968F /* StickersDemo.xcdatamodeld */; };
+		CEACEA461EBE5C1400C5968F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEACEA451EBE5C1400C5968F /* Assets.xcassets */; };
+		CEACEA491EBE5C1400C5968F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEACEA471EBE5C1400C5968F /* LaunchScreen.storyboard */; };
+		CEACEA541EBE5C1400C5968F /* StickersDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEACEA531EBE5C1400C5968F /* StickersDemoTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEACEA501EBE5C1400C5968F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEACEA301EBE5C1300C5968F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEACEA371EBE5C1300C5968F;
+			remoteInfo = StickersDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CEACEA381EBE5C1400C5968F /* StickersDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StickersDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEACEA3B1EBE5C1400C5968F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEACEA3D1EBE5C1400C5968F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEACEA401EBE5C1400C5968F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEACEA431EBE5C1400C5968F /* StickersDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StickersDemo.xcdatamodel; sourceTree = "<group>"; };
+		CEACEA451EBE5C1400C5968F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEACEA481EBE5C1400C5968F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEACEA4A1EBE5C1400C5968F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEACEA4F1EBE5C1400C5968F /* StickersDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StickersDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEACEA531EBE5C1400C5968F /* StickersDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickersDemoTests.swift; sourceTree = "<group>"; };
+		CEACEA551EBE5C1400C5968F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEACEA351EBE5C1300C5968F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEACEA4C1EBE5C1400C5968F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEACEA2F1EBE5C1300C5968F = {
+			isa = PBXGroup;
+			children = (
+				CEACEA3A1EBE5C1400C5968F /* StickersDemo */,
+				CEACEA521EBE5C1400C5968F /* StickersDemoTests */,
+				CEACEA391EBE5C1400C5968F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEACEA391EBE5C1400C5968F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEACEA381EBE5C1400C5968F /* StickersDemo.app */,
+				CEACEA4F1EBE5C1400C5968F /* StickersDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEACEA3A1EBE5C1400C5968F /* StickersDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CEACEA3B1EBE5C1400C5968F /* AppDelegate.swift */,
+				CEACEA3D1EBE5C1400C5968F /* ViewController.swift */,
+				CEACEA3F1EBE5C1400C5968F /* Main.storyboard */,
+				CEACEA451EBE5C1400C5968F /* Assets.xcassets */,
+				CEACEA471EBE5C1400C5968F /* LaunchScreen.storyboard */,
+				CEACEA4A1EBE5C1400C5968F /* Info.plist */,
+				CEACEA421EBE5C1400C5968F /* StickersDemo.xcdatamodeld */,
+			);
+			path = StickersDemo;
+			sourceTree = "<group>";
+		};
+		CEACEA521EBE5C1400C5968F /* StickersDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEACEA531EBE5C1400C5968F /* StickersDemoTests.swift */,
+				CEACEA551EBE5C1400C5968F /* Info.plist */,
+			);
+			path = StickersDemoTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEACEA371EBE5C1300C5968F /* StickersDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEACEA581EBE5C1400C5968F /* Build configuration list for PBXNativeTarget "StickersDemo" */;
+			buildPhases = (
+				CEACEA341EBE5C1300C5968F /* Sources */,
+				CEACEA351EBE5C1300C5968F /* Frameworks */,
+				CEACEA361EBE5C1300C5968F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StickersDemo;
+			productName = StickersDemo;
+			productReference = CEACEA381EBE5C1400C5968F /* StickersDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEACEA4E1EBE5C1400C5968F /* StickersDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEACEA5B1EBE5C1400C5968F /* Build configuration list for PBXNativeTarget "StickersDemoTests" */;
+			buildPhases = (
+				CEACEA4B1EBE5C1400C5968F /* Sources */,
+				CEACEA4C1EBE5C1400C5968F /* Frameworks */,
+				CEACEA4D1EBE5C1400C5968F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEACEA511EBE5C1400C5968F /* PBXTargetDependency */,
+			);
+			name = StickersDemoTests;
+			productName = StickersDemoTests;
+			productReference = CEACEA4F1EBE5C1400C5968F /* StickersDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEACEA301EBE5C1300C5968F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = KieranGill;
+				TargetAttributes = {
+					CEACEA371EBE5C1300C5968F = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 46L7A9BBRS;
+						ProvisioningStyle = Automatic;
+					};
+					CEACEA4E1EBE5C1400C5968F = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 46L7A9BBRS;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CEACEA371EBE5C1300C5968F;
+					};
+				};
+			};
+			buildConfigurationList = CEACEA331EBE5C1300C5968F /* Build configuration list for PBXProject "StickersDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEACEA2F1EBE5C1300C5968F;
+			productRefGroup = CEACEA391EBE5C1400C5968F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEACEA371EBE5C1300C5968F /* StickersDemo */,
+				CEACEA4E1EBE5C1400C5968F /* StickersDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEACEA361EBE5C1300C5968F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEACEA491EBE5C1400C5968F /* LaunchScreen.storyboard in Resources */,
+				CEACEA461EBE5C1400C5968F /* Assets.xcassets in Resources */,
+				CEACEA411EBE5C1400C5968F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEACEA4D1EBE5C1400C5968F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEACEA341EBE5C1300C5968F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEACEA441EBE5C1400C5968F /* StickersDemo.xcdatamodeld in Sources */,
+				CEACEA3E1EBE5C1400C5968F /* ViewController.swift in Sources */,
+				CEACEA3C1EBE5C1400C5968F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEACEA4B1EBE5C1400C5968F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEACEA541EBE5C1400C5968F /* StickersDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEACEA511EBE5C1400C5968F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEACEA371EBE5C1300C5968F /* StickersDemo */;
+			targetProxy = CEACEA501EBE5C1400C5968F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEACEA3F1EBE5C1400C5968F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEACEA401EBE5C1400C5968F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEACEA471EBE5C1400C5968F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEACEA481EBE5C1400C5968F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEACEA561EBE5C1400C5968F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEACEA571EBE5C1400C5968F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEACEA591EBE5C1400C5968F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 46L7A9BBRS;
+				INFOPLIST_FILE = StickersDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KieranGill.StickersDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CEACEA5A1EBE5C1400C5968F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 46L7A9BBRS;
+				INFOPLIST_FILE = StickersDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KieranGill.StickersDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CEACEA5C1EBE5C1400C5968F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 46L7A9BBRS;
+				INFOPLIST_FILE = StickersDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KieranGill.StickersDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StickersDemo.app/StickersDemo";
+			};
+			name = Debug;
+		};
+		CEACEA5D1EBE5C1400C5968F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 46L7A9BBRS;
+				INFOPLIST_FILE = StickersDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KieranGill.StickersDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StickersDemo.app/StickersDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEACEA331EBE5C1300C5968F /* Build configuration list for PBXProject "StickersDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEACEA561EBE5C1400C5968F /* Debug */,
+				CEACEA571EBE5C1400C5968F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEACEA581EBE5C1400C5968F /* Build configuration list for PBXNativeTarget "StickersDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEACEA591EBE5C1400C5968F /* Debug */,
+				CEACEA5A1EBE5C1400C5968F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CEACEA5B1EBE5C1400C5968F /* Build configuration list for PBXNativeTarget "StickersDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEACEA5C1EBE5C1400C5968F /* Debug */,
+				CEACEA5D1EBE5C1400C5968F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CEACEA421EBE5C1400C5968F /* StickersDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CEACEA431EBE5C1400C5968F /* StickersDemo.xcdatamodel */,
+			);
+			currentVersion = CEACEA431EBE5C1400C5968F /* StickersDemo.xcdatamodel */;
+			path = StickersDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CEACEA301EBE5C1300C5968F /* Project object */;
+}
