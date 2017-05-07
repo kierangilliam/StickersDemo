@@ -16,20 +16,23 @@ class StickerView: UIView, Sticker {
     
     // Won't be used, only created for testing purposes 
     required init (image: UIImage, x: CGFloat, y: CGFloat) {
-        let w = image.size.width * StickerConstants.ScaleWidthFactor   // Width
-        let h = image.size.height * StickerConstants.ScaleHeightFactor // Height
-        let f = CGRect.init(x: x, y: y, width: w, height: h)           // Frame
+        let h = StickerConstants.StickerHeight
+        self.image = image.resizeImage(newHeight: h)
         
-        self.image = image.resizeImage(newWidth: w)
+        let f = CGRect.init(x: x, y: y, width: image.size.width, height: h) // Frame
         
         super.init(frame: f)
         setup()
     }
     
     // Called when initialized from a StickerCell
-    required init (parent: StickerCell) {
+    required init (parent: StickerSource) {
+        
+        // Must get absolute coordinates of parent since it is embedded inside a ContainerView
+        let coords = parent.convert(parent.bounds.origin, to: UIScreen.main.focusedView)
+        
         // Draw rect with the same properties as parent
-        let f = CGRect.init(x: parent.frame.origin.x, y: parent.frame.origin.y, width: parent.frame.width, height: parent.frame.height)
+        let f = CGRect.init(x: coords.x, y: coords.y, width: parent.frame.width, height: parent.frame.height)
         
         self.image = parent.image
         
@@ -87,7 +90,7 @@ extension StickerView: Draggable, UIGestureRecognizerDelegate {
         switch gesture.state {
         case .changed:
             
-            self.transform = self.transform.rotated(by: gesture.rotation)
+            gesture.view?.transform = (gesture.view?.transform)!.rotated(by: gesture.rotation);
             gesture.rotation = 0
         default:
             break
@@ -98,9 +101,11 @@ extension StickerView: Draggable, UIGestureRecognizerDelegate {
         switch gesture.state {
         case .changed:
             
-            let translation = gesture.translation(in: self)
-            self.center = CGPoint(x: self.center.x + translation.x, y: self.center.y + translation.y)
-            
+            let translation = gesture.translation(in: self.superview)
+            if let view = gesture.view {
+                view.center = CGPoint(x:self.center.x + translation.x,
+                                      y:self.center.y + translation.y)
+            }
             gesture.setTranslation(CGPoint.zero, in: self)
         default:
             break

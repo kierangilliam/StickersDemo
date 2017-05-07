@@ -10,10 +10,7 @@ import UIKit
 
 struct StickerConstants {
     static let Bounds = UIScreen.main.bounds
-    static let NumberOfStickers : CGFloat = 6.0
-    static let StickerWidth : CGFloat = CGFloat(Bounds.width / NumberOfStickers)
-    static let StickerHeight : CGFloat = CGFloat(Bounds.height / 5) // Stickers start at 1/5 size of screen
-    static let ScaleWidthFactor : CGFloat = 0.4
-    static let ScaleHeightFactor : CGFloat = 0.4
+    static let ContainerHeight = CGFloat(Bounds.height / 5) // Container is 1/5 size of screen
+    static let StickerHeight : CGFloat = ContainerHeight - 10 // 5 pixels for padding
     
 }

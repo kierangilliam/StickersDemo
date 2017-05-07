@@ -10,20 +10,17 @@ import UIKit
 
 class CameraViewController: UIViewController {
     
-    var stickerImages = ["star-icon", "flower-icon", "star-icon", "flower-icon"]
+    var stickerNames = ["star-icon", "flower-icon", "star-icon", "flower-icon"]
+    var stickersContainer: StickersContainerView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         print("Camera View Loaded")
         
-        let startingX = 0
-        let startingY = UIScreen.main.bounds
+        stickersContainer = StickersContainerView(stickerNames: stickerNames)
         
-        for i in stickerImages {
-            let img: UIImage = UIImage(named: i)!
-            let s: StickerView = StickerView(image: img, x: 200, y: 200)
-        }
+        self.view.addSubview(stickersContainer)
         
     }
 

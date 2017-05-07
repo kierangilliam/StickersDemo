@@ -8,16 +8,18 @@
 
 import UIKit
 
+
+// I would do this if I implemented a UICollectionView (Probably smarter)
+
 class StickerCell: UICollectionViewCell, Sticker {
     
     internal var image: UIImage
     
     required init (image: UIImage, x: CGFloat, y: CGFloat) {
-        let w = image.size.width * StickerConstants.ScaleWidthFactor   // Width
-        let h = image.size.height * StickerConstants.ScaleHeightFactor // Height
-        let f = CGRect.init(x: x, y: y, width: w, height: h)           // Frame
+        let h = StickerConstants.StickerHeight
+        self.image = image.resizeImage(newHeight: h)
         
-        self.image = image.resizeImage(newWidth: w)
+        let f = CGRect.init(x: x, y: y, width: image.size.width, height: h) // Frame
         
         super.init(frame: f)
         setup()

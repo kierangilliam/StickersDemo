@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CE9917AE1EBEAF8C004FB90F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9917AD1EBEAF8C004FB90F /* Extensions.swift */; };
+		CE9917B01EBEB56C004FB90F /* StickersContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9917AF1EBEB56C004FB90F /* StickersContainerView.swift */; };
+		CE9917B21EBEBA91004FB90F /* StickerSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9917B11EBEBA91004FB90F /* StickerSource.swift */; };
 		CEACEA3C1EBE5C1400C5968F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEACEA3B1EBE5C1400C5968F /* AppDelegate.swift */; };
 		CEACEA411EBE5C1400C5968F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEACEA3F1EBE5C1400C5968F /* Main.storyboard */; };
 		CEACEA441EBE5C1400C5968F /* StickersDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEACEA421EBE5C1400C5968F /* StickersDemo.xcdatamodeld */; };
@@ -34,6 +36,8 @@
 
 /* Begin PBXFileReference section */
 		CE9917AD1EBEAF8C004FB90F /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CE9917AF1EBEB56C004FB90F /* StickersContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickersContainerView.swift; sourceTree = "<group>"; };
+		CE9917B11EBEBA91004FB90F /* StickerSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerSource.swift; sourceTree = "<group>"; };
 		CEACEA381EBE5C1400C5968F /* StickersDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StickersDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEACEA3B1EBE5C1400C5968F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEACEA401EBE5C1400C5968F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -133,8 +137,10 @@
 			isa = PBXGroup;
 			children = (
 				CEACEA631EBE5E8500C5968F /* StickerCell.swift */,
+				CE9917B11EBEBA91004FB90F /* StickerSource.swift */,
 				CEACEA6C1EBE8E9500C5968F /* CameraView.swift */,
 				CEACEA651EBE603D00C5968F /* StickerView.swift */,
+				CE9917AF1EBEB56C004FB90F /* StickersContainerView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -254,12 +260,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE9917B01EBEB56C004FB90F /* StickersContainerView.swift in Sources */,
 				CEACEA441EBE5C1400C5968F /* StickersDemo.xcdatamodeld in Sources */,
 				CE9917AE1EBEAF8C004FB90F /* Extensions.swift in Sources */,
 				CEACEA661EBE603D00C5968F /* StickerView.swift in Sources */,
 				CEACEA6B1EBE8E3800C5968F /* Protocols.swift in Sources */,
 				CEACEA641EBE5E8500C5968F /* StickerCell.swift in Sources */,
 				CEACEA3C1EBE5C1400C5968F /* AppDelegate.swift in Sources */,
+				CE9917B21EBEBA91004FB90F /* StickerSource.swift in Sources */,
 				CEACEA6F1EBE8EAD00C5968F /* CameraViewController.swift in Sources */,
 				CEACEA691EBE8E2B00C5968F /* Constants.swift in Sources */,
 				CEACEA6D1EBE8E9500C5968F /* CameraView.swift in Sources */,
