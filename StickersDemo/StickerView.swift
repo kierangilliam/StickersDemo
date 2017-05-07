@@ -52,6 +52,10 @@ class StickerView: UIView, Sticker {
         setupRecognizers()
     }
     
+    // Test to see if returnToParent works
+    deinit {
+        print("Deinited")
+    }
 }
 
 // MARK: Gestures
@@ -133,9 +137,9 @@ extension StickerView: Draggable, UIGestureRecognizerDelegate {
     
     // Called when StickerView is placed back in StickersDock
     func returnToParent() {
-        // Animate returning to parent then delete
+        // TODO : Animate returning to parent then delete
         
-        
+        self.removeFromSuperview()
     }
 }
 
