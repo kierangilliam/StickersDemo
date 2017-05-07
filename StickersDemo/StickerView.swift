@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class StickerView: UIView, Sticker {
     
     internal var image: UIImage
@@ -57,6 +58,7 @@ class StickerView: UIView, Sticker {
 
 extension StickerView: Draggable, UIGestureRecognizerDelegate {
     
+    
     // Add gesture recognizers to StickerView
     func setupRecognizers () {
         self.isUserInteractionEnabled = true
@@ -98,18 +100,31 @@ extension StickerView: Draggable, UIGestureRecognizerDelegate {
     }
     
     func move(_ gesture: UIPanGestureRecognizer) {
+        print("Moving", gesture.state.rawValue)
         switch gesture.state {
+        case .began: fallthrough
         case .changed:
             
             let translation = gesture.translation(in: self.superview)
+            print(translation.x, translation.y)
             if let view = gesture.view {
                 view.center = CGPoint(x:self.center.x + translation.x,
                                       y:self.center.y + translation.y)
             }
             gesture.setTranslation(CGPoint.zero, in: self)
+        case .possible:
+            print("possible", gesture.view?.bounds.minY, gesture.view?.bounds.minX)
+            print(self.bounds.minY, self.bounds.minX)
         default:
             break
         }
+    }
+    
+    func moveByParent(_ translation: CGPoint) {
+        print(translation.x, translation.y)
+        
+        self.frame.origin.x += translation.x
+        self.frame.origin.y += translation.y
     }
     
     public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {

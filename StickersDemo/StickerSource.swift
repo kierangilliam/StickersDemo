@@ -12,6 +12,9 @@ class StickerSource: UIView, Sticker {
     
     internal var image: UIImage
     
+    // Reference to child we are creating and moving (Refer to gestures)
+    var currentChild: StickerView?
+    
     required init (image: UIImage, x: CGFloat, y: CGFloat) {
         let h = StickerConstants.StickerHeight
         self.image = image.resizeImage(newHeight: h)
@@ -35,17 +38,28 @@ class StickerSource: UIView, Sticker {
 
 }
 
+class ImmediatePanGesture: UIPanGestureRecognizer {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent) {
+        if (self.state == UIGestureRecognizerState.began) {
+            return
+        }
+        super.touchesBegan(touches, with: event)
+        self.state = UIGestureRecognizerState.began;
+    }
+}
+
 // MARK: Gestures
 
 extension StickerSource: UIGestureRecognizerDelegate {
+    
     
     // Add gesture recognizers to StickerView
     func setupRecognizers () {
         self.isUserInteractionEnabled = true
         
-        let tap = UIPanGestureRecognizer(target: self, action: #selector(createSticker(_ :)))
-        tap.delegate = self
-        self.addGestureRecognizer(tap)
+        let pan = UIPanGestureRecognizer(target: self, action: #selector(createSticker(_ :)))
+        pan.delegate = self
+        self.addGestureRecognizer(pan)
     }
     
     
@@ -54,13 +68,19 @@ extension StickerSource: UIGestureRecognizerDelegate {
         switch gesture.state {
         case .began:
             print("Pan began")
-            let s: StickerView = StickerView(parent: self)
-            print(s.bounds.height, s.bounds.width)
-            print(StickerConstants.StickerHeight)
-            self.superview?.superview?.addSubview(s)
+            currentChild = StickerView(parent: self)
+            self.superview?.superview?.addSubview(currentChild!)
             
-            // Attach child to a gesture
             
+        case .changed:
+            print("Pan changing")
+            // Move child to current pan coords
+            currentChild?.moveByParent(gesture.translation(in: self.superview?.superview))
+            gesture.setTranslation(CGPoint.zero, in: self.superview?.superview)
+            
+        case .ended:
+            // Remove reference of child we were moving
+            currentChild = nil
             
         default:
             break

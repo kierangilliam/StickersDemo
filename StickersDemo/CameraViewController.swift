@@ -10,7 +10,9 @@ import UIKit
 
 class CameraViewController: UIViewController {
     
-    var stickerNames = ["star-icon", "flower-icon", "star-icon", "flower-icon"]
+    var stickerNames = ["star-icon", "flower-icon", "star-icon",
+                        "flower-icon", "star-icon", "flower-icon",
+                        "star-icon", "flower-icon"]
     var stickersContainer: StickersContainerView!
 
     override func viewDidLoad() {
