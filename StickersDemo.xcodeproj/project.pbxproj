@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE9917AE1EBEAF8C004FB90F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9917AD1EBEAF8C004FB90F /* Extensions.swift */; };
 		CEACEA3C1EBE5C1400C5968F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEACEA3B1EBE5C1400C5968F /* AppDelegate.swift */; };
-		CEACEA3E1EBE5C1400C5968F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEACEA3D1EBE5C1400C5968F /* ViewController.swift */; };
 		CEACEA411EBE5C1400C5968F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEACEA3F1EBE5C1400C5968F /* Main.storyboard */; };
 		CEACEA441EBE5C1400C5968F /* StickersDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEACEA421EBE5C1400C5968F /* StickersDemo.xcdatamodeld */; };
 		CEACEA461EBE5C1400C5968F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEACEA451EBE5C1400C5968F /* Assets.xcassets */; };
 		CEACEA491EBE5C1400C5968F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEACEA471EBE5C1400C5968F /* LaunchScreen.storyboard */; };
 		CEACEA541EBE5C1400C5968F /* StickersDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEACEA531EBE5C1400C5968F /* StickersDemoTests.swift */; };
+		CEACEA641EBE5E8500C5968F /* StickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEACEA631EBE5E8500C5968F /* StickerCell.swift */; };
+		CEACEA661EBE603D00C5968F /* StickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEACEA651EBE603D00C5968F /* StickerView.swift */; };
+		CEACEA691EBE8E2B00C5968F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEACEA681EBE8E2B00C5968F /* Constants.swift */; };
+		CEACEA6B1EBE8E3800C5968F /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEACEA6A1EBE8E3800C5968F /* Protocols.swift */; };
+		CEACEA6D1EBE8E9500C5968F /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEACEA6C1EBE8E9500C5968F /* CameraView.swift */; };
+		CEACEA6F1EBE8EAD00C5968F /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEACEA6E1EBE8EAD00C5968F /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,9 +33,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE9917AD1EBEAF8C004FB90F /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		CEACEA381EBE5C1400C5968F /* StickersDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StickersDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEACEA3B1EBE5C1400C5968F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CEACEA3D1EBE5C1400C5968F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CEACEA401EBE5C1400C5968F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEACEA431EBE5C1400C5968F /* StickersDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StickersDemo.xcdatamodel; sourceTree = "<group>"; };
 		CEACEA451EBE5C1400C5968F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +44,12 @@
 		CEACEA4F1EBE5C1400C5968F /* StickersDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StickersDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEACEA531EBE5C1400C5968F /* StickersDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickersDemoTests.swift; sourceTree = "<group>"; };
 		CEACEA551EBE5C1400C5968F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEACEA631EBE5E8500C5968F /* StickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerCell.swift; sourceTree = "<group>"; };
+		CEACEA651EBE603D00C5968F /* StickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerView.swift; sourceTree = "<group>"; };
+		CEACEA681EBE8E2B00C5968F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CEACEA6A1EBE8E3800C5968F /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		CEACEA6C1EBE8E9500C5968F /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		CEACEA6E1EBE8EAD00C5968F /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				CEACEA3B1EBE5C1400C5968F /* AppDelegate.swift */,
-				CEACEA3D1EBE5C1400C5968F /* ViewController.swift */,
 				CEACEA3F1EBE5C1400C5968F /* Main.storyboard */,
+				CEACEA601EBE5D0200C5968F /* UI */,
 				CEACEA451EBE5C1400C5968F /* Assets.xcassets */,
 				CEACEA471EBE5C1400C5968F /* LaunchScreen.storyboard */,
 				CEACEA4A1EBE5C1400C5968F /* Info.plist */,
@@ -97,6 +109,44 @@
 				CEACEA551EBE5C1400C5968F /* Info.plist */,
 			);
 			path = StickersDemoTests;
+			sourceTree = "<group>";
+		};
+		CEACEA601EBE5D0200C5968F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CEACEA671EBE8DF500C5968F /* Support */,
+				CEACEA621EBE5D3100C5968F /* Views */,
+				CEACEA611EBE5D1800C5968F /* Controllers */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		CEACEA611EBE5D1800C5968F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEACEA6E1EBE8EAD00C5968F /* CameraViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		CEACEA621EBE5D3100C5968F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEACEA631EBE5E8500C5968F /* StickerCell.swift */,
+				CEACEA6C1EBE8E9500C5968F /* CameraView.swift */,
+				CEACEA651EBE603D00C5968F /* StickerView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CEACEA671EBE8DF500C5968F /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				CEACEA681EBE8E2B00C5968F /* Constants.swift */,
+				CEACEA6A1EBE8E3800C5968F /* Protocols.swift */,
+				CE9917AD1EBEAF8C004FB90F /* Extensions.swift */,
+			);
+			name = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,8 +255,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEACEA441EBE5C1400C5968F /* StickersDemo.xcdatamodeld in Sources */,
-				CEACEA3E1EBE5C1400C5968F /* ViewController.swift in Sources */,
+				CE9917AE1EBEAF8C004FB90F /* Extensions.swift in Sources */,
+				CEACEA661EBE603D00C5968F /* StickerView.swift in Sources */,
+				CEACEA6B1EBE8E3800C5968F /* Protocols.swift in Sources */,
+				CEACEA641EBE5E8500C5968F /* StickerCell.swift in Sources */,
 				CEACEA3C1EBE5C1400C5968F /* AppDelegate.swift in Sources */,
+				CEACEA6F1EBE8EAD00C5968F /* CameraViewController.swift in Sources */,
+				CEACEA691EBE8E2B00C5968F /* Constants.swift in Sources */,
+				CEACEA6D1EBE8E9500C5968F /* CameraView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +470,7 @@
 				CEACEA5A1EBE5C1400C5968F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEACEA5B1EBE5C1400C5968F /* Build configuration list for PBXNativeTarget "StickersDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +479,7 @@
 				CEACEA5D1EBE5C1400C5968F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
